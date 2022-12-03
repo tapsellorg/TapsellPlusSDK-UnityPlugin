@@ -3,6 +3,9 @@
 [**Tapsell Plus**](https://tapsell.ir/tapsellplus/) is a mediating advertising SDK.  
 Using Tapsell plus, helps you grow your advertising income with the favor of using multiple AdNetworks that is best for user at the moment.
 
+## You want to export a new package
+- Update `bundleVersion` to the new version from `ProjectSettings.asset`
+
 ## Installation
 
 **Stable release**
