@@ -8,10 +8,10 @@
         <androidPackage spec="ir.tapsell.plus:tapsell-plus-sdk-unity:2.1.8"/>
 
         <!-- AdMob -->
-        <!--        <androidPackage spec="com.google.android.gms:play-services-ads:20.4.0"/>-->
+        <!--        <androidPackage spec="com.google.android.gms:play-services-ads:20.6.0"/>-->
 
         <!-- UnityAds -->
-        <!--        <androidPackage spec="com.unity3d.ads:unity-ads:3.7.5"/>-->
+        <!--        <androidPackage spec="com.unity3d.ads:unity-ads:4.3.0"/>-->
 
         <!-- ChartBoost -->
         <!--        <androidPackage spec="com.chartboost:chartboost-sdk:8.2.1"/>-->
@@ -23,13 +23,13 @@
         <!--        <androidPackage spec="com.applovin:applovin-sdk:10.3.4"/>-->
 
         <!-- Mintegral - make sure you uncomment the custom repository up above -->
-        <!--        <androidPackage spec="com.mbridge.msdk.oversea:videojs:15.6.11"/>-->
-        <!--        <androidPackage spec="com.mbridge.msdk.oversea:mbbanner:15.6.11"/>-->
-        <!--        <androidPackage spec="com.mbridge.msdk.oversea:mbjscommon:15.6.11"/>-->
-        <!--        <androidPackage spec="com.mbridge.msdk.oversea:playercommon:15.6.11"/>-->
-        <!--        <androidPackage spec="com.mbridge.msdk.oversea:reward:15.6.11"/>-->
-        <!--        <androidPackage spec="com.mbridge.msdk.oversea:videocommon:15.6.11"/>-->
-        <!--        <androidPackage spec="com.mbridge.msdk.oversea:same:15.6.11"/>-->
-        <!--        <androidPackage spec="com.mbridge.msdk.oversea:interstitialvideo:15.6.11"/>-->
+        <!--        <androidPackage spec="com.mbridge.msdk.oversea:videojs:15.7.41"/>-->
+        <!--        <androidPackage spec="com.mbridge.msdk.oversea:mbbanner:15.7.41"/>-->
+        <!--        <androidPackage spec="com.mbridge.msdk.oversea:mbjscommon:15.7.41"/>-->
+        <!--        <androidPackage spec="com.mbridge.msdk.oversea:playercommon:15.7.41"/>-->
+        <!--        <androidPackage spec="com.mbridge.msdk.oversea:reward:15.7.41"/>-->
+        <!--        <androidPackage spec="com.mbridge.msdk.oversea:videocommon:15.7.41"/>-->
+        <!--        <androidPackage spec="com.mbridge.msdk.oversea:same:15.7.41"/>-->
+        <!--        <androidPackage spec="com.mbridge.msdk.oversea:interstitialvideo:15.7.41"/>-->
     </androidPackages>
 </dependencies>
