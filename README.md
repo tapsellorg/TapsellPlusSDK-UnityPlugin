@@ -8,3 +8,8 @@ Using Tapsell plus, helps you grow your advertising income with the favor of usi
 **Stable release**
 
 Stable releases (and pre-release) versions are published in [Github](https://github.com/tapsellorg/TapsellPlusSDK-UnitySample2019/releases) and accessible directly
+
+## AdNetworks
+
+### AdMob
+- To use admob you need to download and import [GoogleMobileAds.unitypackage](https://github.com/googleads/googleads-mobile-unity/releases) and [GoogleMobileAdsNative.unitypackage](https://dl.google.com/googleadmobadssdk/GoogleMobileAds-native.unitypackage) into your project
