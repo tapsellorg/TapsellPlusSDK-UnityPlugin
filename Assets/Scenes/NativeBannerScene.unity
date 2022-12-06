@@ -174,7 +174,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9504509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e616ec9441f1e4b838b54d60fb99bbd0, type: 3}
+  m_Script: {fileID: 11500000, guid: beae78fd5882d4ccfa8ee364e3d71961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   adImage: {fileID: 1075881537}
@@ -432,10 +432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e616ec9441f1e4b838b54d60fb99bbd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adImage: {fileID: 1075881537}
-  adHeadline: {fileID: 595218922}
-  adCallToAction: {fileID: 595218922}
-  adBody: {fileID: 135521705}
 --- !u!1 &135521703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,7 +1200,6 @@ GameObject:
   - component: {fileID: 1331278956}
   - component: {fileID: 1331278955}
   - component: {fileID: 1331278954}
-  - component: {fileID: 1331278957}
   - component: {fileID: 1331278958}
   m_Layer: 5
   m_Name: Back
@@ -1328,22 +1323,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331278951}
   m_CullTransparentMesh: 0
---- !u!114 &1331278957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331278951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e616ec9441f1e4b838b54d60fb99bbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  adImage: {fileID: 1075881537}
-  adHeadline: {fileID: 595218922}
-  adCallToAction: {fileID: 925077052}
-  adBody: {fileID: 135521705}
 --- !u!114 &1331278958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1353,7 +1332,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1331278951}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3338a3222b17e41388f7e959919e8f89, type: 3}
+  m_Script: {fileID: 11500000, guid: 14ff2f03376b64c46b27be114f7f8dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1381255001
@@ -1613,7 +1592,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2080632998}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e616ec9441f1e4b838b54d60fb99bbd0, type: 3}
+  m_Script: {fileID: 11500000, guid: beae78fd5882d4ccfa8ee364e3d71961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   adImage: {fileID: 1075881537}
