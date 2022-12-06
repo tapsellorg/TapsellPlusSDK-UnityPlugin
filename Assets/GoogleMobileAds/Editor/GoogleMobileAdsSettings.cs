@@ -32,6 +32,7 @@ namespace GoogleMobileAds.Editor
             return instance;
         }
 
+
         [SerializeField]
         private string adMobAndroidAppId = string.Empty;
 
@@ -40,12 +41,6 @@ namespace GoogleMobileAds.Editor
 
         [SerializeField]
         private bool delayAppMeasurementInit;
-
-        [SerializeField]
-        private bool optimizeInitialization;
-
-        [SerializeField]
-        private bool optimizeAdLoading;
 
         public string GoogleMobileAdsAndroidAppId
         {
@@ -66,20 +61,6 @@ namespace GoogleMobileAds.Editor
             get { return delayAppMeasurementInit; }
 
             set { delayAppMeasurementInit = value; }
-        }
-
-        public bool OptimizeInitialization
-        {
-            get { return optimizeInitialization; }
-
-            set { optimizeInitialization = value; }
-        }
-
-        public bool OptimizeAdLoading
-        {
-            get { return optimizeAdLoading; }
-
-            set { optimizeAdLoading = value; }
         }
     }
 }

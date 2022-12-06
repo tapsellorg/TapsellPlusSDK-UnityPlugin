@@ -24,6 +24,7 @@ using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
 #endif
 using UnityEngine;
+
 using GoogleMobileAds.Editor;
 
 #if UNITY_2018_1_OR_NEWER
@@ -32,20 +33,12 @@ public class ManifestProcessor : IPreprocessBuildWithReport
 public class ManifestProcessor : IPreprocessBuild
 #endif
 {
-    private const string MANIFEST_RELATIVE_PATH =
-            "Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml";
+    private const string META_APPLICATION_ID  = "com.google.android.gms.ads.APPLICATION_ID";
 
-    private const string METADATA_APPLICATION_ID  =
-            "com.google.android.gms.ads.APPLICATION_ID";
+    private const string MANIFEST_RELATIVE_PATH = "Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml";
 
-    private const string METADATA_DELAY_APP_MEASUREMENT_INIT =
+    private const string META_DELAY_APP_MEASUREMENT_INIT =
             "com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT";
-
-    private const string METADATA_OPTIMIZE_INITIALIZATION =
-            "com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION";
-
-    private const string METADATA_OPTIMIZE_AD_LOADING =
-            "com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING";
 
     private XNamespace ns = "http://schemas.android.com/apk/res/android";
 
@@ -88,6 +81,10 @@ public class ManifestProcessor : IPreprocessBuild
             StopBuildWithMessage("AndroidManifest.xml is not valid. Try re-importing the plugin.");
         }
 
+        IEnumerable<XElement> metas = elemApplication.Descendants()
+                .Where( elem => elem.Name.LocalName.Equals("meta-data"));
+
+        XElement elemGMAEnabled = GetMetaElement(metas, META_APPLICATION_ID);
         GoogleMobileAdsSettings instance = GoogleMobileAdsSettings.LoadInstance();
         string appId = instance.GoogleMobileAdsAndroidAppId;
 
@@ -97,28 +94,35 @@ public class ManifestProcessor : IPreprocessBuild
                 "Android Google Mobile Ads app ID is empty. Please enter a valid app ID to run ads properly.");
         }
 
-        IEnumerable<XElement> metas = elemApplication.Descendants()
-                .Where( elem => elem.Name.LocalName.Equals("meta-data"));
+        if (elemGMAEnabled == null)
+        {
+            elemApplication.Add(CreateMetaElement(META_APPLICATION_ID, appId));
+        }
+        else
+        {
+            elemGMAEnabled.SetAttributeValue(ns + "value", appId);
+        }
 
-        SetMetadataElement(elemApplication,
-                           metas,
-                           METADATA_APPLICATION_ID,
-                           appId);
-
-        SetMetadataElement(elemApplication,
-                           metas,
-                           METADATA_DELAY_APP_MEASUREMENT_INIT,
-                           instance.DelayAppMeasurementInit);
-
-        SetMetadataElement(elemApplication,
-                           metas,
-                           METADATA_OPTIMIZE_INITIALIZATION,
-                           instance.OptimizeInitialization);
-
-        SetMetadataElement(elemApplication,
-                           metas,
-                           METADATA_OPTIMIZE_AD_LOADING,
-                           instance.OptimizeAdLoading);
+        XElement elemDelayAppMeasurementInit =
+                GetMetaElement(metas, META_DELAY_APP_MEASUREMENT_INIT);
+        if (instance.DelayAppMeasurementInit)
+        {
+            if (elemDelayAppMeasurementInit == null)
+            {
+                elemApplication.Add(CreateMetaElement(META_DELAY_APP_MEASUREMENT_INIT, true));
+            }
+            else
+            {
+                elemDelayAppMeasurementInit.SetAttributeValue(ns + "value", true);
+            }
+        }
+        else
+        {
+            if (elemDelayAppMeasurementInit != null)
+            {
+                elemDelayAppMeasurementInit.Remove();
+            }
+        }
 
         elemManifest.Save(manifestPath);
     }
@@ -146,64 +150,6 @@ public class ManifestProcessor : IPreprocessBuild
         return null;
     }
 
-    /// <summary>
-    /// Utility for setting a metadata element
-    /// </summary>
-    /// <param name="elemApplication">application element</param>
-    /// <param name="metas">all metadata elements</param>
-    /// <param name="metadataName">name of the element to set</param>
-    /// <param name="metadataValue">value to set</param>
-    private void SetMetadataElement(XElement elemApplication,
-                                    IEnumerable<XElement> metas,
-                                    string metadataName,
-                                    string metadataValue)
-    {
-        XElement element = GetMetaElement(metas, metadataName);
-        if (element == null)
-        {
-            elemApplication.Add(CreateMetaElement(metadataName, metadataValue));
-        }
-        else
-        {
-            element.SetAttributeValue(ns + "value", metadataValue);
-        }
-    }
-
-    /// <summary>
-    /// Utility for setting a metadata element
-    /// </summary>
-    /// <param name="elemApplication">application element</param>
-    /// <param name="metas">all metadata elements</param>
-    /// <param name="metadataName">name of the element to set</param>
-    /// <param name="metadataValue">value to set</param>
-    /// <param name="defaultValue">If metadataValue is default, node will be removed.</param>
-    private void SetMetadataElement(XElement elemApplication,
-                                    IEnumerable<XElement> metas,
-                                    string metadataName,
-                                    bool metadataValue,
-                                    bool defaultValue = false)
-    {
-        XElement element = GetMetaElement(metas, metadataName);
-        if (metadataValue != defaultValue)
-        {
-            if (element == null)
-            {
-                elemApplication.Add(CreateMetaElement(metadataName, metadataValue));
-            }
-            else
-            {
-                element.SetAttributeValue(ns + "value", metadataValue);
-            }
-        }
-        else
-        {
-            if (element != null)
-            {
-                element.Remove();
-            }
-        }
-    }
-
     private void StopBuildWithMessage(string message)
     {
         string prefix = "[GoogleMobileAds] ";
@@ -214,4 +160,5 @@ public class ManifestProcessor : IPreprocessBuild
     #endif
     }
 }
+
 #endif
