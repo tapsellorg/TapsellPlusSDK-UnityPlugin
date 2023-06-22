@@ -1,0 +1,77 @@
+# =============== #
+# Unity generated #
+# =============== #
+Logs/
+[Bb]uild/
+/[Bb]uilds/
+[Ll]ibrary/
+[Ll]ocal[Cc]ache/
+[Oo]bj/
+[Tt]emp/
+[Uu]nityGenerated/
+UserSettings/
+/Assets/AssetStoreTools*
+*.apk
+*.meta
+*.aar
+
+# =============== #
+# License files #
+# =============== #
+*.alf
+*.ulf
+
+# =============== #
+# Crash reports #
+# =============== #
+sysinfo.txt
+*.stackdump
+
+# =============== #
+# Local persoanl configs #
+# =============== #
+config.properties
+
+# ===================================== #
+# Visual Studio / Rider /MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+.vs/
+.idea/
+/*.userprefs
+/*.csproj
+/*.pidb
+*.pidb.meta
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+.consulo/
+/*.tmp
+/*.svd
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+Assets/DS_Store*
+Assets/Plugins/DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+Corridor/Library/ShaderCache/
+Corridor/Library/metadata/
+
+
+# ============ #
+# Tapsell plus #
+# ============ #
+
+Assets/Plugins/Android/*.[ja]ar
+# Avoid publishing manually created packages. CI must do that
+#tapsell-plus-unity-*.unitypackage
