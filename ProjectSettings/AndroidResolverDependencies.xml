@@ -1,0 +1,34 @@
+<dependencies>
+  <packages>
+    <package>androidx.work:work-runtime:2.7.0</package>
+    <package>com.applovin:applovin-sdk:12.4.0</package>
+    <package>com.chartboost:chartboost-sdk:8.2.1</package>
+    <package>com.google.android.gms:play-services-ads:22.6.0</package>
+    <package>com.google.android.ump:user-messaging-platform:2.1.0</package>
+    <package>com.google.code.gson:gson:2.8.5</package>
+    <package>com.mbridge.msdk.oversea:mbbanner:16.6.71</package>
+    <package>com.mbridge.msdk.oversea:mbbid:16.6.71</package>
+    <package>com.mbridge.msdk.oversea:newinterstitial:16.6.71</package>
+    <package>com.mbridge.msdk.oversea:reward:16.6.71</package>
+    <package>com.unity3d.ads:unity-ads:4.6.1</package>
+    <package>ir.tapsell.plus:tapsell-plus-sdk-unity:2.2.6</package>
+  </packages>
+  <files />
+  <settings>
+    <setting name="androidAbis" value="arm64-v8a,armeabi-v7a" />
+    <setting name="bundleId" value="ir.tapsell.plus.sample" />
+    <setting name="explodeAars" value="True" />
+    <setting name="gradleBuildEnabled" value="True" />
+    <setting name="gradlePropertiesTemplateEnabled" value="True" />
+    <setting name="gradleTemplateEnabled" value="False" />
+    <setting name="installAndroidPackages" value="True" />
+    <setting name="localMavenRepoDir" value="Assets/GeneratedLocalRepo" />
+    <setting name="packageDir" value="Assets/Plugins/Android" />
+    <setting name="patchAndroidManifest" value="True" />
+    <setting name="patchMainTemplateGradle" value="True" />
+    <setting name="projectExportEnabled" value="False" />
+    <setting name="useFullCustomMavenRepoPathWhenExport" value="True" />
+    <setting name="useFullCustomMavenRepoPathWhenNotExport" value="False" />
+    <setting name="useJetifier" value="True" />
+  </settings>
+</dependencies>

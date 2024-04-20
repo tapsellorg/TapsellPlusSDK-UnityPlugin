@@ -1,0 +1,27 @@
+﻿<dependencies>
+    <androidPackages>
+        <repositories>
+            <!-- Add this for Mintegral usage. NOTE: Repository will result in 403. Make sure you're using VPN or Proxy to circumvent it -->
+            <repository>https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea</repository>
+        </repositories>
+
+        <androidPackage spec="ir.tapsell.plus:tapsell-plus-sdk-unity:2.2.6"/>
+
+        <!-- UnityAds -->
+        <androidPackage spec="com.unity3d.ads:unity-ads:4.6.1"/>
+        
+        <androidPackage spec="androidx.work:work-runtime:2.7.0"/>
+
+        <!-- ChartBoost -->
+        <androidPackage spec="com.chartboost:chartboost-sdk:8.2.1"/>
+
+        <!-- AppLovin -->
+        <androidPackage spec="com.applovin:applovin-sdk:12.4.0"/>
+
+        <!-- Mintegral - make sure you uncomment the custom repository up above -->
+        <androidPackage spec="com.mbridge.msdk.oversea:mbbanner:16.6.71"/>
+        <androidPackage spec="com.mbridge.msdk.oversea:reward:16.6.71"/>
+        <androidPackage spec="com.mbridge.msdk.oversea:newinterstitial:16.6.71"/>
+        <androidPackage spec="com.mbridge.msdk.oversea:mbbid:16.6.71"/>
+    </androidPackages>
+</dependencies>
