@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -252,8 +251,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: TapsellPlus SDK Sample
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -455,6 +454,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -556,7 +556,7 @@ GameObject:
   - component: {fileID: 604960668}
   - component: {fileID: 604960667}
   - component: {fileID: 604960666}
-  - component: {fileID: 604960665}
+  - component: {fileID: 604960669}
   m_Layer: 5
   m_Name: RewardedVIdeo
   m_TagString: Untagged
@@ -585,18 +585,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &604960665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 604960663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3338a3222b17e41388f7e959919e8f89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &604960666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -641,8 +629,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 604960665}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 604960669}
+        m_TargetAssemblyTypeName: FirstScene, Assembly-CSharp
         m_MethodName: ChangeScenes
         m_Mode: 5
         m_Arguments:
@@ -691,6 +679,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604960663}
   m_CullTransparentMesh: 0
+--- !u!114 &604960669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604960663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2870a723ff324747860d54bab3afd48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &926867620
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,7 +703,7 @@ GameObject:
   - component: {fileID: 926867625}
   - component: {fileID: 926867624}
   - component: {fileID: 926867623}
-  - component: {fileID: 926867622}
+  - component: {fileID: 926867626}
   m_Layer: 5
   m_Name: StandardBanner
   m_TagString: Untagged
@@ -732,18 +732,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &926867622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926867620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3338a3222b17e41388f7e959919e8f89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &926867623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,8 +776,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 926867622}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 926867626}
+        m_TargetAssemblyTypeName: FirstScene, Assembly-CSharp
         m_MethodName: ChangeScenes
         m_Mode: 5
         m_Arguments:
@@ -838,6 +826,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926867620}
   m_CullTransparentMesh: 0
+--- !u!114 &926867626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926867620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2870a723ff324747860d54bab3afd48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &940472172
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,7 +930,7 @@ GameObject:
   - component: {fileID: 985165577}
   - component: {fileID: 985165576}
   - component: {fileID: 985165575}
-  - component: {fileID: 985165574}
+  - component: {fileID: 985165578}
   m_Layer: 5
   m_Name: NativeBanner
   m_TagString: Untagged
@@ -959,18 +959,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &985165574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 985165571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3338a3222b17e41388f7e959919e8f89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &985165575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1015,8 +1003,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 985165574}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 985165578}
+        m_TargetAssemblyTypeName: FirstScene, Assembly-CSharp
         m_MethodName: ChangeScenes
         m_Mode: 5
         m_Arguments:
@@ -1065,6 +1053,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985165571}
   m_CullTransparentMesh: 0
+--- !u!114 &985165578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985165571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2870a723ff324747860d54bab3afd48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1048774415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,7 +1151,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1048774420}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: FirstScene, Assembly-CSharp
         m_MethodName: ChangeScenes
         m_Mode: 5
         m_Arguments:
@@ -1209,7 +1209,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1048774415}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3338a3222b17e41388f7e959919e8f89, type: 3}
+  m_Script: {fileID: 11500000, guid: a2870a723ff324747860d54bab3afd48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1384855905
