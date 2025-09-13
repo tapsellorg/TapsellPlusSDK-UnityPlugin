@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -136,7 +135,7 @@ GameObject:
   - component: {fileID: 205350075}
   - component: {fileID: 205350074}
   - component: {fileID: 205350073}
-  - component: {fileID: 205350072}
+  - component: {fileID: 205350076}
   m_Layer: 5
   m_Name: Show
   m_TagString: Untagged
@@ -166,20 +165,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &205350072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 205350070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ef988835163b434f8709c56836527ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadStatus: {fileID: 1170867800}
-  adStatus: {fileID: 1988457627}
 --- !u!114 &205350073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,7 +209,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 205350072}
+      - m_Target: {fileID: 205350076}
         m_TargetAssemblyTypeName: RewardedScene, Assembly-CSharp
         m_MethodName: Show
         m_Mode: 1
@@ -274,6 +259,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205350070}
   m_CullTransparentMesh: 0
+--- !u!114 &205350076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205350070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040e446aa9f37496e88081e449ac6f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadStatus: {fileID: 0}
+  adStatus: {fileID: 0}
 --- !u!1 &385993711
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,7 +417,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 385993711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3338a3222b17e41388f7e959919e8f89, type: 3}
+  m_Script: {fileID: 11500000, guid: a2870a723ff324747860d54bab3afd48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &425595930
@@ -548,6 +547,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -777,7 +777,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 791275251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ef988835163b434f8709c56836527ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 040e446aa9f37496e88081e449ac6f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loadStatus: {fileID: 1170867800}
@@ -842,8 +842,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Rewarded Video
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -977,8 +977,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1345,8 +1345,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

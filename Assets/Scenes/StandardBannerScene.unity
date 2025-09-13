@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -402,6 +401,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -536,7 +536,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 485894143}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83f2609909e04c75909ab0b17f1e396, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ad168e2cf5274c8fbf61790cb694017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loadStatus: {fileID: 2037391037}
@@ -845,7 +845,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 965348432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83f2609909e04c75909ab0b17f1e396, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ad168e2cf5274c8fbf61790cb694017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loadStatus: {fileID: 2037391037}
@@ -994,7 +994,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1100742343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83f2609909e04c75909ab0b17f1e396, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ad168e2cf5274c8fbf61790cb694017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loadStatus: {fileID: 2037391037}
@@ -1237,7 +1237,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1198764990}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3338a3222b17e41388f7e959919e8f89, type: 3}
+  m_Script: {fileID: 11500000, guid: a2870a723ff324747860d54bab3afd48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1760822883
@@ -1376,7 +1376,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1875987452}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83f2609909e04c75909ab0b17f1e396, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ad168e2cf5274c8fbf61790cb694017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loadStatus: {fileID: 2037391037}
@@ -1695,8 +1695,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1915,7 +1915,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2078888406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a83f2609909e04c75909ab0b17f1e396, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ad168e2cf5274c8fbf61790cb694017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loadStatus: {fileID: 2037391037}
@@ -1980,8 +1980,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Standard Banner
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2115,8 +2115,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 09011ad978a9b4d67b37ddead6ca5347, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
